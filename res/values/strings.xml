@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">领红包</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test_main">TestMainActivity</string>
+
+    
+    <string name="home_page_text">首页</string>
+    <string name="red_mall_text">红包商城</string>
+    <string name="pay_bill_text">买单</string>
+    <string name="me_text">我的</string>
+</resources>
