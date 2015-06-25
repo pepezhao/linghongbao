@@ -276,6 +276,7 @@ public class MyApplication extends Application {
 				current_city_name = tempcity;
 			}
 
+			
 			current_Latitude = location.getLatitude();
 			current_Longitude = location.getLongitude(); 
 			CityName = spImp.getCity_name();	
