@@ -171,6 +171,7 @@ public class LoginPageActivity extends BaseActivity implements OnClickListener {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
+			customProDialog.dismiss();
 		}
 
 		@Override
