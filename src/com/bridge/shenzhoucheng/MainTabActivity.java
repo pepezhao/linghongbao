@@ -11,6 +11,7 @@ import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
+import android.widget.TextView;
 
 import com.bridge.shenzhoucheng.homepage.HomePageActivity;
 import com.bridge.shenzhoucheng.me.MeActivity;
@@ -22,6 +23,9 @@ public class MainTabActivity extends TabActivity {
 
 	private TabHost mTabHost;
 
+	//测试登陆页传值
+//	private TextView tv_value;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -31,6 +35,11 @@ public class MainTabActivity extends TabActivity {
 
 		setContentView(R.layout.activity_maintab);
 
+		//接值
+//		tv_value=(TextView) findViewById(R.id.tv_value);
+//		Intent intent=getIntent();
+//		tv_value.setText(intent.getStringExtra("value"));
+		
 		mContext = MainTabActivity.this;
 
 		mTabHost = getTabHost();

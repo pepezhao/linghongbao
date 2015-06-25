@@ -43,7 +43,29 @@ public class SpImp {
 		editor.commit();
 	}
 
+	private String user_id;
 	private String city_name;
 	private Boolean is_guided;
 
+	private String tel;
+	private String password;
+
+	public String getTel() {
+		return sp.getString(SpPublic.TEL, "");
+	}
+
+	public void setTel(String tel) {
+		editor.putString(SpPublic.TEL, tel).toString();
+		editor.commit();
+	}
+
+	public String getPassword() {
+		return sp.getString(SpPublic.PASSWORD, "");
+	}
+
+	public void setPassword(String password) {
+		editor.putString(SpPublic.PASSWORD, password).toString();
+		editor.commit();
+	}
+	
 }

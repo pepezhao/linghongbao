@@ -86,6 +86,11 @@ public class MyApplication extends Application {
 	// 当前精度
 	private Double current_Longitude = 0.0;
 
+	//登录进来的电话号
+	private String Tel ="";
+	//登录进来的密码
+	private String Password ="";
+	
 	// baiduMap++ end
 
 	@Override
@@ -227,6 +232,22 @@ public class MyApplication extends Application {
 		CityName = cityName;
 	}
 
+	public String getTel() {
+		return Tel;
+	}
+
+	public void setTel(String tel) {
+		Tel = tel;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
 	public String getCurrent_city_name() {
 		return current_city_name;
 	}
@@ -280,6 +301,10 @@ public class MyApplication extends Application {
 			current_Longitude = location.getLongitude(); 
 			CityName = spImp.getCity_name();	
 
+			//记录电话号与密码
+			Tel=spImp.getTel();
+			Password=spImp.getPassword();
+			
 			StringBuffer sb = new StringBuffer(256);
 			sb.append("time : ");
 			sb.append(location.getTime());

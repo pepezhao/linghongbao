@@ -6,5 +6,7 @@ public class SpPublic {
 	public static String USERMODEL = "cusermodel";
 	public static String USER_ID = "user_id";
 	public static String CITY_NAME ="city_name";
+	public static String TEL = "tel";
+	public static String PASSWORD = "password";
 	
 }
